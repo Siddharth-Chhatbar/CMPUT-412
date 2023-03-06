@@ -1,0 +1,3 @@
+<launch>
+    <node pkg="apriltag" type="apriltag_detector_node.py" name="apriltag_detector_node" output="screen"/>
+</launch>

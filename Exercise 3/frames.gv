@@ -1,0 +1,29 @@
+digraph G {
+"csc22946/left_wheel_axis" -> "csc22946/left_wheel"[label=" Broadcaster: /csc22946/left_wheel_encoder_node\nAverage rate: 30.208\nBuffer length: 4.932\nMost recent transform: 1678041421.42\nOldest transform: 1678041416.488\n"];
+"csc22946/left_motor" -> "csc22946/left_wheel_axis"[label=" Broadcaster: /csc22946/robot_state_publisher\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"csc22946/right_wheel_axis" -> "csc22946/right_wheel"[label=" Broadcaster: /csc22946/right_wheel_encoder_node\nAverage rate: 30.203\nBuffer length: 4.933\nMost recent transform: 1678041421.433\nOldest transform: 1678041416.499\n"];
+"csc22946/right_motor" -> "csc22946/right_wheel_axis"[label=" Broadcaster: /csc22946/robot_state_publisher\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"csc22946/base" -> "csc22946/bottom_plate"[label=" Broadcaster: /csc22946/robot_state_publisher\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"csc22946/footprint" -> "csc22946/base"[label=" Broadcaster: /csc22946/robot_state_publisher\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"csc22946/base" -> "csc22946/left_motor"[label=" Broadcaster: /csc22946/robot_state_publisher\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"csc22946/base" -> "csc22946/right_motor"[label=" Broadcaster: /csc22946/robot_state_publisher\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"csc22946/bottom_plate" -> "csc22946/caster_wheel"[label=" Broadcaster: /csc22946/robot_state_publisher\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"csc22946/bottom_plate" -> "csc22946/side_plate_left"[label=" Broadcaster: /csc22946/robot_state_publisher\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"csc22946/bottom_plate" -> "csc22946/side_plate_right"[label=" Broadcaster: /csc22946/robot_state_publisher\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"csc22946/bottom_plate" -> "csc22946/top_plate"[label=" Broadcaster: /csc22946/robot_state_publisher\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"csc22946/camera_frame" -> "csc22946/camera_optical_frame"[label=" Broadcaster: /csc22946/robot_state_publisher\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"csc22946/camera_support" -> "csc22946/camera_frame"[label=" Broadcaster: /csc22946/robot_state_publisher\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"csc22946/camera_mount" -> "csc22946/camera_support"[label=" Broadcaster: /csc22946/robot_state_publisher\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"csc22946/top_plate" -> "csc22946/camera_mount"[label=" Broadcaster: /csc22946/robot_state_publisher\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"csc22946/interaction_plate" -> "csc22946/tag_mount"[label=" Broadcaster: /csc22946/robot_state_publisher\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"csc22946/top_plate" -> "csc22946/interaction_plate"[label=" Broadcaster: /csc22946/robot_state_publisher\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"csc22946/top_plate" -> "csc22946/back_bumper"[label=" Broadcaster: /csc22946/robot_state_publisher\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"csc22946/top_plate" -> "csc22946/front_bumper"[label=" Broadcaster: /csc22946/robot_state_publisher\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"csc22946/top_plate" -> "csc22946/hat_support"[label=" Broadcaster: /csc22946/robot_state_publisher\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"csc22946/top_plate" -> "csc22946/side_cover_left"[label=" Broadcaster: /csc22946/robot_state_publisher\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"csc22946/top_plate" -> "csc22946/side_cover_right"[label=" Broadcaster: /csc22946/robot_state_publisher\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 1678041424.0849144"[ shape=plaintext ] ;
+}->"csc22946/footprint";
+}
