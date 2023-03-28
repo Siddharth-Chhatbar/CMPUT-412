@@ -1,0 +1,16 @@
+<launch>
+
+    <arg name="pkg_name" value="drive"/>
+    <arg name="node_name" value="drive_node"/>
+    <!-- <arg name="default="/data/config/calibrations/camera_intrinsic/$(arg veh).yaml"/>
+    <arg name="ext_path" default="/data/config/calibrations/camera_extrinsic/$(arg veh).yaml"/> -->
+
+    <group ns="$(arg veh)">
+        <node  name="$(arg node_name)" pkg="$(arg pkg_name)" type="$(arg node_name).py" output="screen">
+            <param name="veh" value="$(arg veh)"/>
+            <!-- <param name="int_path" value="$(arg int_path)"/>
+            <param name="ext_path" value="$(arg ext_path)"/> -->
+        </node>
+    </group>
+
+</launch>
