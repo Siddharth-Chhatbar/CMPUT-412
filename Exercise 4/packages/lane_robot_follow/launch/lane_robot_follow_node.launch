@@ -1,0 +1,10 @@
+<launch>
+    <arg name="veh" default="csc22918"/>
+    <arg name="pkg_name" default="lane_robot_follow"/>
+    <arg name="node_name" default="lane_robot_follow_node"/>
+    <group ns="$(arg veh)">
+        <node name="$(arg node_name)" pkg="$(arg pkg_name)" type="$(arg node_name).py" output="screen" required="true">
+            <param name="veh" value="$(arg veh)" />
+        </node>
+    </group>
+</launch>
