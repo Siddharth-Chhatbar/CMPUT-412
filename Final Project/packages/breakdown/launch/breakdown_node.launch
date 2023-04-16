@@ -1,0 +1,12 @@
+<launch>
+
+    <arg name="pkg_name" value="breakdown"/>
+    <arg name="node_name" value="breakdown_node"/>
+    <arg name="veh" default="csc22918"/>
+
+    <group ns="$(arg veh)">
+        <node  name="$(arg node_name)" pkg="$(arg pkg_name)" type="$(arg node_name).py" output="screen">
+            <param name="veh" value="$(arg veh)"/>
+        </node>
+    </group>
+</launch>
